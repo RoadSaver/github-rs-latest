@@ -169,11 +169,11 @@ const EnhancedEmployeeManagement: React.FC<EnhancedEmployeeManagementProps> = ({
   const getStatusChip = (status?: string) => {
     switch (status) {
       case 'suspended':
-        return <Chip label="Suspended" color="error" size="small" />;
+        return <Chip label="Suspended\" color="error\" size="small" />;
       case 'inactive':
-        return <Chip label="Inactive" color="warning" size="small" />;
+        return <Chip label="Inactive\" color="warning\" size="small" />;
       default:
-        return <Chip label="Active" color="success" size="small" />;
+        return <Chip label="Active\" color="success\" size="small" />;
     }
   };
 
