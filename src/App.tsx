@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -13,7 +12,7 @@ import UserDashboard from "./pages/user/Dashboard";
 import EmployeeAuth from "./pages/employee/EmployeeAuth";
 import EmployeeDashboard from "./pages/employee/EmployeeDashboard";
 import AdminAuth from "./pages/admin/AdminAuth";
-import MigrationPanel from "./components/admin/MigrationPanel";
+import MigrationPanelEnhanced from "./components/admin/MigrationPanelEnhanced";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -34,7 +33,7 @@ const App = () => (
                 <Route path="/employee" element={<EmployeeAuth />} />
                 <Route path="/employee/dashboard" element={<EmployeeDashboard />} />
                 <Route path="/admin" element={<AdminAuth />} />
-                <Route path="/migration" element={<MigrationPanel />} />
+                <Route path="/migration" element={<MigrationPanelEnhanced />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </BrowserRouter>
